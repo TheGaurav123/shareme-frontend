@@ -1,0 +1,56 @@
+.uploadSection {
+    border-radius: 25px;
+    animation: boxAnima 5s ease-in-out infinite;
+    transition: .3s;
+}
+
+
+.sendIcon{
+    clip-path: circle();
+}
+
+
+.fileInfoDiv{
+    border-radius: 50px;
+    border: .5px solid rgba(128, 128, 128, 0.411)
+}
+
+@keyframes boxAnima {
+    0% {
+        box-shadow: rgb(138, 171, 243) 0px 0px 7px;
+    }
+    
+    50% {
+        box-shadow: rgb(200, 200, 200) 0px 0px 7px;
+    }
+
+    75% {
+        box-shadow: rgb(73, 131, 255) 0px 0px 7px;
+    }
+
+    100%{
+        box-shadow: rgb(138, 171, 243) 0px 0px 7px;
+
+    }
+}
+
+
+
+/* Drag CSS */
+
+.dargInBox{
+    transition: .3s;
+    background-color: rgba(0, 152, 155, 0.356);
+    transition: .3s;
+    animation: unset;
+}
+
+.dragout{
+    transition: .3s;
+}
+
+.dragIn{
+    transition: .3s;
+    transform: scale(1.2);
+    transform: translate(0px, -20px)
+}

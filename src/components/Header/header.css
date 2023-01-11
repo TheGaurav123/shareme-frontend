@@ -1,0 +1,41 @@
+.brandTxt {
+    color: var(--secondary)
+}
+
+.brandLogo{
+    width: 3.5rem;
+}
+
+.githubIcon {
+    width: 3rem;
+    cursor: pointer;
+    filter: drop-shadow(rgb(179, 65, 255) 0px 0px 5px);
+    animation: githubAnima 3s infinite ease-in-out;
+}
+
+
+@keyframes githubAnima {
+    0% {
+        filter: drop-shadow(rgb(179, 65, 255) 0px 0px 5px);
+    }
+
+    50% {
+        filter: drop-shadow(rgb(255, 65, 119) 0px 0px 5px);
+    }
+
+    100% {
+        filter: drop-shadow(rgb(179, 65, 255) 0px 0px 5px);
+    }
+}
+
+
+
+@media (min-width:320px) and (max-width:768px){
+    .brandingSection{
+        width: 75% !important;
+    }
+
+    .githubIcon{
+        width: 2.5rem;
+    }
+}

@@ -1,0 +1,17 @@
+.popperContainer{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 99vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.688);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popperImg{
+    position: relative;
+   width: 15rem;
+}

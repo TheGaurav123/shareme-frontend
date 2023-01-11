@@ -1,0 +1,30 @@
+.downloadBtn{
+    text-decoration: none;
+    background-color: var(--primary);
+    border-radius: 6px;
+    border: none;
+    transition: .3s;
+    display: inline-block;
+    color: white;
+}
+
+.downloadBtn:hover{
+   transition: .3s;
+   transform: scale(1.05);
+}
+
+
+.downloadContainer{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.downloadItemContainer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
