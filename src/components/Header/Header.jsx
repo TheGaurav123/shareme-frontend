@@ -15,7 +15,7 @@ const Header = () => {
 
         {/* Github */}
         <div className="col-6 d-flex justify-content-end">
-          <img src="/assets/github.svg" className='githubIcon img-fluid' alt="github" />
+          <img src="/assets/github.svg" onClick={()=>window.open('https://github.com/TheGaurav123/shareme-frontend','_blank')} className='githubIcon img-fluid' alt="github" />
         </div>
       </div>
       
