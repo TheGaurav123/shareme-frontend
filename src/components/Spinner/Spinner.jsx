@@ -2,7 +2,6 @@ import React from 'react'
 import './spinner.css'
 import { PropagateLoader } from 'react-spinners'
 const Spinner = ({ state }) => {
-    console.log(state)
     return (
         <>
             {state ?
