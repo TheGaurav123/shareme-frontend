@@ -31,7 +31,7 @@ const Upload = ({state}) => {
 
   const sendData = async () => {
     clientData.append('file', data[0])
-    let response = await fetch('https://shareme-ij37.onrender.com/api/upload', {
+    let response = await fetch(`${process.env.REACT_APP_API_URL}/api/upload`, {
       method: 'POST',
       body: clientData
     },

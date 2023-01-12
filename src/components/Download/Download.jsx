@@ -14,7 +14,7 @@ const Download = ({state}) => {
 
   // Handle Data
   const handleAPI = async () => {
-    let response = await fetch(`https://shareme-ij37.onrender.com/api/files/${uuid}`,
+    let response = await fetch(`${process.env.REACT_APP_API_URL}/api/files/${uuid}`,
     state(true)
     )
 
@@ -43,7 +43,7 @@ const Download = ({state}) => {
   // Handle Download
   const handleDownload = (e) => {
     e.preventDefault();
-    window.open(`https://shareme-ij37.onrender.com/api/files/download/${data.uuid}`, '_blank')
+    window.open(`${process.env.REACT_APP_API_URL}/api/files/download/${data.uuid}`, '_blank')
   }
 
 
