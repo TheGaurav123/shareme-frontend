@@ -1,5 +1,5 @@
-<img src="https://raw.githubusercontent.com/TheGaurav123/shareme-frontend/main/public/android-chrome-192x192.png" />
 # ShareMe 
+<img src="https://raw.githubusercontent.com/TheGaurav123/shareme-frontend/main/public/android-chrome-192x192.png" />
 Shareme is a file sharing platform.
 
 ## Features
