@@ -1,7 +1,7 @@
 import React from 'react'
 import { Download } from '../../components'
-const download = () => {
-  return <Download />
+const download = ({state}) => {
+  return <Download state={state} />
 }
 
 export default download

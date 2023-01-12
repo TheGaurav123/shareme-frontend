@@ -3,7 +3,7 @@ import toast from 'react-hot-toast'
 import Popper from '../Popper/Popper'
 import Link from '../Link/Link'
 import './upload.css'
-const Upload = () => {
+const Upload = ({state}) => {
   const [data, setData] = useState([]) //eslint-disable-line
   const [drag, setDrag] = useState(false)
   const [popper, setPopper] = useState(false)
@@ -34,9 +34,16 @@ const Upload = () => {
     let response = await fetch('https://shareme-ij37.onrender.com/api/upload', {
       method: 'POST',
       body: clientData
-    })
+    },
+    state(true)
+    )
+
+    state(false)
+
 
     response = await response.json()
+
+    
 
     if (response.message) {
       toast.success('Wohoo, link is ready...!')

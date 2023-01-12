@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <section className='py-3 px-3 container'>
@@ -8,9 +9,12 @@ const Header = () => {
         {/* Branding */}
         <div className="col-6">
           <div className="row w-25 brandingSection">
-            <img src='/assets/icon.svg' className='ms-md-5 img-fluid mx-auto brandLogo' alt="shareMe" />
-            <div className="h3 fw-light brandTxt pt-1">shareMe</div>
+            <Link className='text-decoration-none d-flex flex-column' to='/'>
+            <img src='/assets/icon.svg' className='img-fluid mx-auto brandLogo' alt="shareMe" />
+            <div className="h4 mx-auto fw-light brandTxt pt-1">shareMe</div>
+            </Link>
           </div>
+          
         </div>
 
         {/* Github */}

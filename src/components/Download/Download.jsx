@@ -7,14 +7,18 @@ import { useParams } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 
 
-const Download = () => {
+const Download = ({state}) => {
   let uuid = useParams().uuid
   const [data, setData] = useState(null)
 
 
   // Handle Data
   const handleAPI = async () => {
-    let response = await fetch(`https://shareme-ij37.onrender.com/api/files/${uuid}`)
+    let response = await fetch(`https://shareme-ij37.onrender.com/api/files/${uuid}`,
+    state(true)
+    )
+
+    state(false)
     response = await response.json();
     if (response.message) {
       setData(response.message)
@@ -75,8 +79,8 @@ const Download = () => {
           </div>
         </>
         :
-        <section>
-          <div className="h4 text-white">No Data Found</div>
+        <section className='errorContainer'>
+         <div className="h3 text-danger py-5">Oops! Link has been expired... 😔</div>
         </section>
       }
     </>
