@@ -61,7 +61,7 @@ Start the server
 
 **Database:** MongoDB
 
-## Backend Repo 
+## Backend Repository
 
 https://github.com/TheGaurav123/shareme-backend
 
